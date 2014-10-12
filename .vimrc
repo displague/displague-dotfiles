@@ -36,6 +36,8 @@ setl number
 set cpoptions+=n
 
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
