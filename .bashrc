@@ -124,3 +124,15 @@ PERL5LIB="/home/displague/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5
 PERL_LOCAL_LIB_ROOT="/home/displague/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/displague/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/displague/perl5"; export PERL_MM_OPT;
+
+which hub > /dev/null && alias git=hub
+
+function _update_ps1() {
+  export PS1="$(powerline-shell.py $? 2> /dev/null)";
+}
+
+which powerline-shell.py >/dev/null && export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+
+function sag(){
+  sudo apt-get -qq -y $@;
+}
