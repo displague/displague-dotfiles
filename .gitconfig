@@ -1,5 +1,9 @@
 [user]
 	name = Marques Johansson
 	email = marques@displague.com
+[color]
+	ui = auto
 [push]
 	default = simple
+[branch]
+	autosetuprebase = always
