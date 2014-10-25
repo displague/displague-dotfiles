@@ -1,2 +1,1 @@
-PATH="~/.local/bin:~/.bin:$PATH"
-export PATH
+[ -f "~/.bashrc" ] && . ~/.bashrc
