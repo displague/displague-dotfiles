@@ -34,6 +34,7 @@ set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 setl number
 set cpoptions+=n
+set smartcase
 
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 highlight ExtraWhitespace ctermbg=red guibg=red
