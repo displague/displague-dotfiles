@@ -46,5 +46,5 @@ prmptcmd() {
 
 precmd_functions=(prmptcmd)
 
-export PATH="~/.local/bin:$PATH"
+export PATH="~/.local/bin:~/.bin:~/bin:$PATH"
 alias ls='ls --color -F'
