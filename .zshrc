@@ -48,3 +48,7 @@ precmd_functions=(prmptcmd)
 
 export PATH="~/.local/bin:~/.bin:~/bin:$PATH"
 alias ls='ls --color -F'
+if command -v colordiff > /dev/null; then
+  alias diff=colordiff;
+fi
+
