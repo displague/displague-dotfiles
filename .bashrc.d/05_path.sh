@@ -3,6 +3,7 @@ try_paths=(
   "$HOME/.local/bin"
   "$HOME/.bin"
   "$HOME/bin"
+  "$HOME/.gem/ruby/2.1.0/bin"
   "/opt/google/google_appengine"
 );
 
