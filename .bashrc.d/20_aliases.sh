@@ -32,3 +32,4 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 alias no='yes n'
+alias plint='perl -Mstrict -cw'
