@@ -118,4 +118,4 @@ let g:syntastic_enable_perl_checker = 1
 " let g:syntastic_quiet_messages = { "type": "style" }
 nnoremap <A-Left> :tabprevious<CR>
 nnoremap <A-Right> :tabnext<CR>
-
+set background=dark
