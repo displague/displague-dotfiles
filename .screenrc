@@ -1,0 +1,16 @@
+defutf8 on
+utf8 on on
+startup_message off
+term "screen-256color"
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defscrollback 5000
+defbce "on"
+
+startup_message   off
+#caption always "%{kY} %n%f* %t %?%{YR}⮀%{kR} %u %{Rb}%:%{Yb}%?%?%F%{.b}⮀%:%{.w}⮀%?%="
+hardstatus on
+hardstatus alwayslastline
+hardstatus string '%{= dK}%-Lw%{= dW}%50>%n%f* %t%{= dK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+#hardstatus alwayslastline "%{bk} %S %{kb}⮀ $LOGNAME %{bk}⮀ %H %?%{kb}⮀%{kY} %-Lw%{Yk}⮀%:%{Yb}⮀%{Yk}%?%{Yk} %n%f* %t %{kY}⮀%+Lw %-="
+
