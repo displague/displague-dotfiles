@@ -119,3 +119,6 @@ let g:syntastic_enable_perl_checker = 1
 nnoremap <A-Left> :tabprevious<CR>
 nnoremap <A-Right> :tabnext<CR>
 set background=dark
+set gdefault
+set clipboard=unnamed
+" set scrolloff=2
