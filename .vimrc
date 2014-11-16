@@ -122,3 +122,14 @@ set background=dark
 set gdefault
 set clipboard=unnamed
 " set scrolloff=2
+" highlight embedded code
+let perl_extended_vars=1
+let php_sql_query=1
+let php_htmlInString=1
+let php_folding=1
+let php_parent_error_close=1
+let html_use_css=1
+
+set ttyfast
+set ttybuiltin
+set guipty " allegedly improves terminal emulation
