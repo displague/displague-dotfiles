@@ -129,7 +129,14 @@ let php_htmlInString=1
 let php_folding=1
 let php_parent_error_close=1
 let html_use_css=1
-
 set ttyfast
 set ttybuiltin
 set guipty " allegedly improves terminal emulation
+set splitright
+set viewoptions=folds,localoptions,cursor
+
+" CtrlP settings
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 0
+" let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
