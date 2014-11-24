@@ -5,6 +5,7 @@ try_paths=(
   "$HOME/bin"
   "$HOME/.gem/ruby/2.1.0/bin"
   "/opt/google/google_appengine"
+  ${GOPATH//://bin:}/bin
 );
 
 for p in try_paths; do
