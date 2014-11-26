@@ -8,7 +8,7 @@ try_paths=(
   ${GOPATH//://bin:}/bin
 );
 
-for p in try_paths; do
+for p in "${try_paths[@]}"; do
   if [ -d "$p" ]; then
     PATH="$p${PATH+:}${PATH}";
   fi
