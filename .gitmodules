@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/vim-go"]
 	path = .vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule ".vim/bundle/neocomplcache.vim"]
+	path = .vim/bundle/neocomplcache.vim
+	url = git@github.com:Shougo/neocomplcache.vim.git
