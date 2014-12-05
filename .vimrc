@@ -22,13 +22,23 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" backup/persistance settings
+set undodir=~/.vim/tmp/undo//
+set backupdir=~/.vim/tmp/backup//
+set directory=~/.vim/tmp/swap//
+set backupskip=/tmp/*,/private/tmp/*"
+set backup
+set writebackup
+set noswapfile
+
+" persist (g)undo tree between sessions
+set undofile
+set history=100
+set undolevels=100
+
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
-else
-"  set backup		" keep a backup file (restore to previous version)
-"  set undofile		" keep an undo file (undo changes after closing)
 endif
-set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
