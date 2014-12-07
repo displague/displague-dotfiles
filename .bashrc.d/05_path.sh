@@ -4,6 +4,7 @@ try_paths=(
   "$HOME/.bin"
   "$HOME/bin"
   "$HOME/.gem/ruby/2.1.0/bin"
+  "$HOME/.local/share/google-cloud-sdk/bin"
   "/opt/google/google_appengine"
   ${GOPATH//://bin:}/bin
 );
