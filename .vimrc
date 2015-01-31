@@ -123,7 +123,7 @@ let g:solarized_termcolors=256
 
 
 " Syntastic
-let g:syntastic_ruby_checkers = ['ruby', 'mri','rubylint','rubocop']
+let g:syntastic_ruby_checkers = ['ruby', 'mri','ruby-lint','rubocop']
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_ruby_exec = "ruby"
