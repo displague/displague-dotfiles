@@ -1,4 +1,6 @@
 #!/bin/sh
+# GitHub Streak Keeper / Helper
+# - Because vim submodule updates count
 (
   cd ~/.vim/bundle/ && (
     git submodule update --init --recursive;
