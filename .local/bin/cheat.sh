@@ -4,11 +4,11 @@
 (
   cd ~/.vim/bundle/ && (
     git submodule update --init --recursive;
-    for a in *; do (
-      cd $a;
+    for dir in *; do (
+      cd $dir;
       git pull --rebase origin master;
       cd ..;
-      git commit -m "updated .vim bundle $a" $a > /dev/null && git push
+      git commit -m "updated .vim bundle $dir" $dir > /dev/null && git push
     ); done
   )
 )
