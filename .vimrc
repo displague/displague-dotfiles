@@ -139,7 +139,7 @@ let g:used_javascript_libs = 'jquery,angularjs'
 " let g:syntastic_quiet_messages = { "type": "style" }
 
 " Spleling for comments and strings
-set spell spelllang=en_us
+set nospell spelllang=en_us
 
 nnoremap <A-Left> :tabprevious<CR>
 nnoremap <A-Right> :tabnext<CR>
