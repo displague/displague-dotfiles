@@ -25,3 +25,12 @@
 [submodule ".vim/bundle/vim-less"]
 	path = .vim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule ".vim/bundle/vim-colors-solarized"]
+	path = .vim/bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule ".vim/bundle/vim-tomorrow-theme"]
+	path = .vim/bundle/vim-tomorrow-theme
+	url = git@github.com:chriskempson/vim-tomorrow-theme.git
+[submodule ".vim/bundle/molokai"]
+	path = .vim/bundle/molokai
+	url = git@github.com:tomasr/molokai.git
