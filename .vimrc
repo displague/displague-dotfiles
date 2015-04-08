@@ -143,6 +143,7 @@ set nospell spelllang=en_us
 
 nnoremap <A-Left> :tabprevious<CR>
 nnoremap <A-Right> :tabnext<CR>
+
 set background=dark
 set gdefault
 set clipboard=unnamed
