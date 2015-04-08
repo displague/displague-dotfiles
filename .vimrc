@@ -118,8 +118,6 @@ let g:airline#extensions#tabline#fnamecollapse =  1 " /a/m/model.rb
 let g:airline#extensions#hunks#non_zero_only   =  1 " git gutter
 
 set laststatus=2
-set t_Co=256
-let g:solarized_termcolors=256
 
 
 " Syntastic
@@ -144,6 +142,8 @@ set nospell spelllang=en_us
 nnoremap <A-Left> :tabprevious<CR>
 nnoremap <A-Right> :tabnext<CR>
 set background=dark
+set t_Co=256
+let g:solarized_termcolors=256
 set gdefault
 set clipboard=unnamed
 " set scrolloff=2
