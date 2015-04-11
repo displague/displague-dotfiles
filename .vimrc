@@ -119,7 +119,6 @@ let g:airline#extensions#hunks#non_zero_only   =  1 " git gutter
 
 set laststatus=2
 
-
 " Syntastic
 let g:syntastic_ruby_checkers = ['ruby', 'mri','ruby-lint','rubocop']
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
