@@ -1,3 +1,4 @@
+" vim:foldmethod=marker:foldlevel=0:tabstop=2:expandtab
 execute pathogen#infect()
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -11,7 +12,7 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-" backup/persistance settings
+" backup/persistance settings {{{
 set undodir=~/.vim/tmp/undo//
 set backupdir=~/.vim/tmp/backup//
 set directory=~/.vim/tmp/swap//
@@ -19,19 +20,25 @@ set backupskip=/tmp/*,/private/tmp/*"
 set backup
 set writebackup
 set noswapfile
-
-" persist (g)undo tree between sessions
-set undofile
-set history=100
-set undolevels=100
-
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 endif
+" }}}
+
+" persist (g)undo tree between sessions {{{
+set undofile
+set history=100
+set undolevels=100
+" }}}
+
+" UI {{{
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
-setl number
+setl number		" show line numbers
+set wildmenu		" visual autocomplete for command menu
+set lazyredraw		" redraw only when we need to
+set showmatch		" highlight matching [()]
 set cpoptions+=n
 set smartcase
 
@@ -39,6 +46,8 @@ highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE gui
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 autocmd VimEnter,WinEnter * match ExtraWhitespace /\s\+$/
+" }}}
+
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -104,8 +113,27 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+" Folding {{{
+set foldenable			" enable folding
+set foldlevelstart=10		" open most folds by default
+set foldnestmax=10		" 10 nested fold max
+" space to open/close folds
+nnoremap <space> za
+" }}}
 
-" Airline
+set modelines=1     " parse head/foot modelines for vim settings
+
+" allows cursor change in tmux mode
+if exists('$TMUX')
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+else
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
+
+
+" Airline {{{
 let g:airline_theme="powerlineish"
 let g:airline_powerline_fonts = 1
 let g:airline_section_warning = airline#section#create([ "syntastic" ])
@@ -116,10 +144,11 @@ let g:airline#extensions#tabline#enabled       =  1
 let g:airline#extensions#tabline#tab_nr_type   =  1 " tab number
 let g:airline#extensions#tabline#fnamecollapse =  1 " /a/m/model.rb
 let g:airline#extensions#hunks#non_zero_only   =  1 " git gutter
+" }}}
 
 set laststatus=2
 
-" Syntastic
+" Syntastic {{{
 let g:syntastic_ruby_checkers = ['ruby', 'mri','ruby-lint','rubocop']
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 let g:syntastic_python_checkers = ['pylint']
@@ -134,6 +163,8 @@ let g:syntastic_html_tidy_ignore_errors = ["proprietary attribute \"ng-"]
 let g:syntastic_mode_map = {'mode':'active','active _filetypes': [], 'passive_filetypes':['html']}
 let g:used_javascript_libs = 'jquery,angularjs'
 " let g:syntastic_quiet_messages = { "type": "style" }
+" }}}
+
 
 " Spleling for comments and strings
 set nospell spelllang=en_us
@@ -141,9 +172,14 @@ set nospell spelllang=en_us
 nnoremap <A-Left> :tabprevious<CR>
 nnoremap <A-Right> :tabnext<CR>
 
+" Colors {{{
 set background=dark
 set t_Co=256
 let g:solarized_termcolors=256
+" colorscheme default
+color molokai
+" }}}
+
 set gdefault
 set clipboard=unnamed
 " set scrolloff=2
@@ -160,18 +196,19 @@ set guipty " allegedly improves terminal emulation
 set splitright
 set viewoptions=folds,localoptions,cursor
 
-" CtrlP settings
+" CtrlP settings {{{
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 " let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-"
+" }}}
+
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
 autocmd QuickFixCmdPost *grep* cwindow
 
-" YouCompleteMe
+" YouCompleteMe {{{
 "   requires:
 "      apt-get install build-essential cmake python-dev
 "      cd ~/.vim/bundle/YouCompleteMe
@@ -180,6 +217,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 let g:EclimCompletionMethod = 'omnifunc'
 let g:ycm_autoclose_preview_window_after_completion=1
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+" }}}
 
-" colorscheme default
-color molokai
+
