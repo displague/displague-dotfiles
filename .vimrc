@@ -71,7 +71,7 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-" Only do this part when compiled with support for autocommands.
+" Only do this part when compiled with support for autocommands. {{{
 if has("autocmd")
 
   " Enable file type detection.
@@ -103,7 +103,7 @@ else
 
   set autoindent		" always set autoindenting on
 
-endif " has("autocmd")
+endif " has("autocmd") }}}
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
