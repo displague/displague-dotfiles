@@ -152,6 +152,7 @@ set laststatus=2
 let g:syntastic_ruby_checkers = ['ruby', 'mri','ruby-lint','rubocop']
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_perl_checkers = ['perl']
 let g:syntastic_js_checkers = ['jshint','jslint']
 let g:syntastic_ruby_exec = "ruby"
 let g:syntastic_aggregate_errors = 1
