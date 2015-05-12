@@ -132,7 +132,6 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
-
 " Airline {{{
 let g:airline_theme="powerlineish"
 let g:airline_powerline_fonts = 1
@@ -166,7 +165,6 @@ let g:syntastic_mode_map = {'mode':'active','active _filetypes': [], 'passive_fi
 let g:used_javascript_libs = 'jquery,angularjs'
 " let g:syntastic_quiet_messages = { "type": "style" }
 " }}}
-
 
 " Spleling for comments and strings
 set nospell spelllang=en_us
@@ -222,5 +220,3 @@ let g:EclimCompletionMethod = 'omnifunc'
 let g:ycm_autoclose_preview_window_after_completion=1
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " }}}
-
-
