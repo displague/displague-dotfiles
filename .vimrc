@@ -68,7 +68,6 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
-
 " Only do this part when compiled with support for autocommands. {{{
 if has("autocmd")
 
@@ -102,7 +101,6 @@ else
   set autoindent		" always set autoindenting on
 
 endif " has("autocmd") }}}
-
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
 " Only define it when not defined already.
@@ -110,7 +108,6 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
-
 " Folding {{{
 set foldenable			" enable folding
 set foldlevelstart=10		" open most folds by default
@@ -118,7 +115,6 @@ set foldnestmax=10		" 10 nested fold max
 " space to open/close folds
 nnoremap <space> za
 " }}}
-
 set modelines=1     " parse head/foot modelines for vim settings
 
 " allows cursor change in tmux mode
@@ -129,7 +125,6 @@ else
   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
-
 " Airline {{{
 let g:airline_theme="powerlineish"
 let g:airline_powerline_fonts = 1
@@ -142,9 +137,7 @@ let g:airline#extensions#tabline#tab_nr_type   =  1 " tab number
 let g:airline#extensions#tabline#fnamecollapse =  1 " /a/m/model.rb
 let g:airline#extensions#hunks#non_zero_only   =  1 " git gutter
 " }}}
-
 set laststatus=2
-
 " Syntastic {{{
 let g:syntastic_ruby_checkers = ['ruby', 'mri','ruby-lint','rubocop']
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
