@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/cflint-syntastic"]
 	path = .vim/bundle/cflint-syntastic
 	url = git@github.com:cflint/cflint-syntastic
+[submodule ".vim/bundle/vim-gitmodeline"]
+	path = .vim/bundle/vim-gitmodeline
+	url = git://git.cryptomilk.org/projects/vim-gitmodeline.git
