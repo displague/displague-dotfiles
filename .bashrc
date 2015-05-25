@@ -9,6 +9,7 @@ case $- in
 esac
 
 # Execute the .bashrc.d files
-for f in $(ls ~/.bashrc.d/[0-9]*sh | sort -n); do
-  . "$f";
+for rc in $(ls ~/.bashrc.d/[0-9]*sh | sort -n); do
+  . "$rc";
 done
+
