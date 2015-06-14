@@ -167,7 +167,6 @@ let g:solarized_termcolors=256
 " colorscheme default
 color molokai
 " }}}
-
 set gdefault
 set clipboard=unnamed
 " set scrolloff=2
