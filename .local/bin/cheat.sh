@@ -7,6 +7,7 @@
     for dir in *; do (
       cd $dir;
       git pull --rebase origin master;
+      git submodule update --init --recursive
       cd ..;
       git commit -m "updated .vim bundle $dir" $dir > /dev/null && git push
     ); done
