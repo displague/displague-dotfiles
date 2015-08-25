@@ -8,6 +8,7 @@ try_paths=(
   "$HOME/.local/share/google-cloud-sdk/bin"
   "/opt/google/google_appengine"
   ${GOPATH//://bin:}/bin
+  {/usr{/local,},}/sbin
 );
 
 for p in "${try_paths[@]}"; do
