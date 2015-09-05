@@ -11,3 +11,5 @@ url="https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathog
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 	curl -LSso ~/.vim/autoload/pathogen.vim "$url"
+
+~/.local/bin/cheat.sh
