@@ -3,6 +3,7 @@ try_paths=(
   "$HOME/.local/bin"
   "$HOME/.bin"
   "$HOME/bin"
+  "$HOME/.gem/ruby/2.0.0/bin"
   "$HOME/.gem/ruby/2.1.0/bin"
   "$HOME/.local/share/npm/bin/"
   "$HOME/.local/share/google-cloud-sdk/bin"
