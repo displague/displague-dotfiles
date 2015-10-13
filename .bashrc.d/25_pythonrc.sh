@@ -1,0 +1,2 @@
+PYTHONSTARTUP=~/.pythonrc.py
+export PYTHONSTARTUP
