@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/vim-gitmodeline"]
 	path = .vim/bundle/vim-gitmodeline
 	url = git://git.cryptomilk.org/projects/vim-gitmodeline.git
+[submodule "/home/displague/.tmux/plugins/tpm"]
+	path = /home/displague/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
