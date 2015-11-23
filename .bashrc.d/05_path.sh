@@ -3,6 +3,8 @@ try_paths=(
   "$HOME/.local/bin"
   "$HOME/.bin"
   "$HOME/bin"
+  "$HOME/Library/Python/3.5/bin/"
+  "$HOME/Library/Python/2.7/bin/"
   "$HOME/.gem/ruby/2.0.0/bin"
   "$HOME/.gem/ruby/2.1.0/bin"
   "$HOME/.local/share/npm/bin/"
