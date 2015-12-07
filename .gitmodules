@@ -40,12 +40,12 @@
 [submodule ".vim/bundle/vim-gitmodeline"]
 	path = .vim/bundle/vim-gitmodeline
 	url = git://git.cryptomilk.org/projects/vim-gitmodeline.git
-[submodule "/home/displague/.tmux/plugins/tpm"]
-	path = /home/displague/.tmux/plugins/tpm
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "/home/displague/.vim/bundle/vim-python-pep8-indent"]
-	path = /home/displague/.vim/bundle/vim-python-pep8-indent
+[submodule ".vim/bundle/vim-python-pep8-indent"]
+	path = .vim/bundle/vim-python-pep8-indent
 	url = https://github.com/hynek/vim-python-pep8-indent.git
-[submodule "/home/displague/.vim/bundle/python-mode"]
-	path = /home/displague/.vim/bundle/python-mode
+[submodule ".vim/bundle/python-mode"]
+	path = .vim/bundle/python-mode
 	url = https://github.com/klen/python-mode.git
