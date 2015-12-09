@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/python-mode"]
 	path = .vim/bundle/python-mode
 	url = https://github.com/klen/python-mode.git
+[submodule ".vim/bundle/pytest.vim"]
+	path = .vim/bundle/pytest.vim
+	url = https://github.com/alfredodeza/pytest.vim
