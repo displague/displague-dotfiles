@@ -1,9 +1,10 @@
 try_paths=(
-  "$HOME/perl5/bin"
   "$HOME/.local/bin"
   "$HOME/.bin"
   "$HOME/bin"
+  "$HOME/perl5/bin"
   "$HOME/Library/Python/2.7/bin/"
+  "$HOME/Library/Python/3.4/bin/"
   "$HOME/Library/Python/3.5/bin/"
   "$HOME/.gem/ruby/2.0.0/bin"
   "$HOME/.gem/ruby/2.1.0/bin"
