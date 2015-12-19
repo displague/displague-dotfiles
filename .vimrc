@@ -113,7 +113,7 @@ set foldnestmax=10		" 10 nested fold max
 " space to open/close folds
 nnoremap <space> za
 " }}}
-set modelines=1     " parse head/foot modelines for vim settings
+set modelines=2     " parse head/foot modelines for vim settings
 
 " allows cursor change in tmux mode
 if exists('$TMUX')
