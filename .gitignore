@@ -3,3 +3,4 @@ src
 *.key
 .cache
 tmp
+*.*history
