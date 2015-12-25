@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -x
 # GitHub Streak Keeper / Helper
 # - Because vim submodule updates count
 (
