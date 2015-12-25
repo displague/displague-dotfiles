@@ -1,8 +1,10 @@
-#!/bin/bash
+#!/bin/bash -e -x
 # GitHub Streak Keeper / Helper
 # - Because vim submodule updates count
 (
   cd ~/.vim/bundle/ && (
+    git checkout master
+    git pull --rebase origin master
     git submodule update --init --recursive;
     for dir in *; do (
       cd $dir;
