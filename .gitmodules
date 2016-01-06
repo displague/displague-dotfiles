@@ -52,3 +52,9 @@
 [submodule ".vim/bundle/pytest.vim"]
 	path = .vim/bundle/pytest.vim
 	url = https://github.com/alfredodeza/pytest.vim
+[submodule "/home/displague/.vim/bundle/typescript-vim"]
+	path = /home/displague/.vim/bundle/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "/home/displague/.vim/bundle/vimproc.vim"]
+	path = /home/displague/.vim/bundle/vimproc.vim
+	url = git@github.com:Shougo/vimproc.vim.git
