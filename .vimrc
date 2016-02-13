@@ -188,6 +188,10 @@ set viewoptions=folds,localoptions,cursor
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
 " let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 "  }}}
 
