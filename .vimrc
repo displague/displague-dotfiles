@@ -105,7 +105,7 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
-
+set cc=-1
 " Folding {{{
 set foldenable			" enable folding
 set foldlevelstart=10		" open most folds by default
