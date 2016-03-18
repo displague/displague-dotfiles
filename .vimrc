@@ -42,14 +42,13 @@ set showmatch		" highlight matching [()]
 set cpoptions+=n
 set smartcase
 
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd VimEnter,WinEnter * match ExtraWhitespace /\s\+$/
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=Non
+set list listchars=tab:»·,trail:·
+
 " }}}
 " Don't use Ex mode, use Q for formatting
 map Q gq
-
+ 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
