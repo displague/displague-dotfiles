@@ -1,63 +1,84 @@
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
+	branch = master
 [submodule ".vim/bundle/vim-airline"]
 	path = .vim/bundle/vim-airline
 	url = git@github.com:bling/vim-airline.git
+	branch = master
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
+	branch = master
 [submodule ".vim/bundle/vim-sensible"]
 	path = .vim/bundle/vim-sensible
 	url = git@github.com:tpope/vim-sensible.git
+	branch = master
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+	branch = master
 [submodule ".vim/bundle/emmet-vim"]
 	path = .vim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+	branch = master
 [submodule ".vim/bundle/vim-go"]
 	path = .vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+	branch = master
 [submodule ".vim/bundle/YouCompleteMe"]
 	path = .vim/bundle/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe.git
+	branch = master
 [submodule ".vim/bundle/vim-less"]
 	path = .vim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+	branch = master
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+	branch = master
 [submodule ".vim/bundle/vim-tomorrow-theme"]
 	path = .vim/bundle/vim-tomorrow-theme
 	url = git@github.com:chriskempson/vim-tomorrow-theme.git
+	branch = master
 [submodule ".vim/bundle/molokai"]
 	path = .vim/bundle/molokai
 	url = git@github.com:tomasr/molokai.git
+	branch = master
 [submodule ".vim/bundle/cflint-syntastic"]
 	path = .vim/bundle/cflint-syntastic
 	url = git@github.com:cflint/cflint-syntastic
+	branch = master
 [submodule ".vim/bundle/vim-gitmodeline"]
 	path = .vim/bundle/vim-gitmodeline
 	url = git://git.cryptomilk.org/projects/vim-gitmodeline.git
+	branch = master
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+	branch = master
 [submodule ".vim/bundle/vim-python-pep8-indent"]
 	path = .vim/bundle/vim-python-pep8-indent
 	url = https://github.com/hynek/vim-python-pep8-indent.git
+	branch = master
 [submodule ".vim/bundle/python-mode"]
 	path = .vim/bundle/python-mode
 	url = https://github.com/klen/python-mode.git
+	branch = master
 [submodule ".vim/bundle/pytest.vim"]
 	path = .vim/bundle/pytest.vim
 	url = https://github.com/alfredodeza/pytest.vim
+	branch = master
 [submodule ".vim/bundle/typescript-vim"]
 	path = .vim/bundle/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
+	branch = master
 [submodule ".vim/bundle/vimproc.vim"]
 	path = .vim/bundle/vimproc.vim
 	url = git@github.com:Shougo/vimproc.vim.git
+	branch = master
 [submodule ".vim/bundle/vim-airline-themes"]
 	path = .vim/bundle/vim-airline-themes
 	url = git@github.com:vim-airline/vim-airline-themes
+	branch = master
