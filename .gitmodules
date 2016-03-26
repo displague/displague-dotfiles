@@ -30,6 +30,7 @@
 	path = .vim/bundle/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe.git
 	branch = master
+	ignore = dirty
 [submodule ".vim/bundle/vim-less"]
 	path = .vim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
@@ -50,6 +51,7 @@
 	path = .vim/bundle/cflint-syntastic
 	url = git@github.com:cflint/cflint-syntastic
 	branch = master
+	ignore = dirty
 [submodule ".vim/bundle/vim-gitmodeline"]
 	path = .vim/bundle/vim-gitmodeline
 	url = git://git.cryptomilk.org/projects/vim-gitmodeline.git
