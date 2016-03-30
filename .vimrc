@@ -207,5 +207,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 "      ./install.sh --clang-completer
 let g:EclimCompletionMethod = 'omnifunc'
 let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_python_binary_path = '/usr/bin/python3'
+
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " }}}
