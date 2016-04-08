@@ -84,3 +84,7 @@
 	path = .vim/bundle/vim-airline-themes
 	url = git@github.com:vim-airline/vim-airline-themes
 	branch = master
+[submodule ".vim/bundle/salt-vim"]
+	path = .vim/bundle/salt-vim
+	url = git@github.com:saltstack/salt-vim.git
+	branch = master
