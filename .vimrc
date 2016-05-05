@@ -42,7 +42,7 @@ set showmatch		" highlight matching [()]
 set cpoptions+=n
 set smartcase
 
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=Non
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=None
 set list listchars=tab:»·,trail:·
 
 " }}}
