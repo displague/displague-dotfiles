@@ -40,12 +40,17 @@ set wildmenu		" visual autocomplete for command menu
 set lazyredraw		" redraw only when we need to
 set showmatch		" highlight matching [()]
 set cpoptions+=n
-set smartcase
 
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 set list listchars=tab:»·,trail:·
-
 " }}}
+
+" search {{{
+set gdefault
+set ignorecase
+set smartcase
+" }}}
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
  
@@ -58,7 +63,7 @@ if has('mouse')
   set mouse=a
 endif
 
-" Switch syntax highlighting on, when the terminal has colors
+" Suwitch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
   syntax on
@@ -167,7 +172,6 @@ let g:solarized_termcolors=256
 " colorscheme default
 color molokai
 " }}}
-set gdefault
 set clipboard=unnamed
 " set scrolloff=2
 " highlight embedded code
