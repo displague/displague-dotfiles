@@ -34,3 +34,7 @@ fi
 
 alias no='yes n'
 alias plint='perl -Mstrict -Mdiagnostics -cw'
+
+# sql style comments that persist in my history
+alias -- '--'='#'
+
