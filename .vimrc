@@ -213,6 +213,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 let g:EclimCompletionMethod = 'omnifunc'
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_python_binary_path = '/usr/bin/python3'
+let g:tern#command = ["nodejs", expand(':h') . '/.local/bin/tern', '--no-port-file']
 
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " }}}
