@@ -7,3 +7,6 @@
 	default = simple
 [branch]
 	autosetuprebase = always
+[rerere]
+	autoUpdate = true
+	enabled = true
