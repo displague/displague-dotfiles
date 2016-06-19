@@ -159,7 +159,6 @@ let g:syntastic_mode_map = {'mode':'active','active _filetypes': [], 'passive_fi
 let g:used_javascript_libs = 'jquery,angularjs'
 " let g:syntastic_quiet_messages = { "type": "style" }
 " }}}
-
 " Spleling for comments and strings
 set nospell spelllang=en_us
 
