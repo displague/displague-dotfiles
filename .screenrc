@@ -12,5 +12,9 @@ startup_message   off
 hardstatus on
 hardstatus alwayslastline
 hardstatus string '%{= dK}%-Lw%{= dW}%50>%n%f* %t%{= dK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+caption always "%{kY} %n%f* %t %?%{YR}%{kR} %u %{Rb}%:%{Yb}%?%?%F%{.b}%:%{.w}%?%="
+hardstatus alwayslastline "%{bk} %S %{kb} $LOGNAME %{bk} %H %?%{kb}%{kY} %-Lw%{Yk}%:%{Yb}%{Yk}%?%{Yk} %n%f* %t %{kY}%+Lw %-="
+
+
 #hardstatus alwayslastline "%{bk} %S %{kb}⮀ $LOGNAME %{bk}⮀ %H %?%{kb}⮀%{kY} %-Lw%{Yk}⮀%:%{Yb}⮀%{Yk}%?%{Yk} %n%f* %t %{kY}⮀%+Lw %-="
 
