@@ -7,7 +7,7 @@ set -x
     git checkout master \
       && git pull --rebase origin master \
       && git submodule update --init --recursive \
-    && for dir in *; do (
+    && for dir in *; do [ -d "$dir" ] && (
          cd $dir;
          git pull --rebase origin master \
            | grep -q -v 'is up to date' \
