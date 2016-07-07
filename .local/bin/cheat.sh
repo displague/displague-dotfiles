@@ -20,6 +20,7 @@ set -x
   )
 )
 
+# Debian notes for installing youcompleteme
 # sudo apt-get install -y libboost-dev libboost-{python,filesystem,system,regex,thread}-dev g++ clang mono-xbuild cmake libmono-system-xml-linq4.0-cil libmono-system-data-datasetextensions4.0-cil libmono-microsoft-csharp4.0-cil golang
 # #./install.py --system-libclang --system-boost --all
 # ./install.py --system-libclang --system-boost --clang-completer --tern-completer --gocode-completer
