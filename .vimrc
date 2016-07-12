@@ -203,6 +203,7 @@ let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 " }}}
 autocmd QuickFixCmdPost *grep* cwindow
+
 " YouCompleteMe {{{
 "   requires:
 "      apt-get install build-essential cmake python-dev
