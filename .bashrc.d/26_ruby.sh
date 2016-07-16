@@ -1,1 +1,1 @@
-export GEM_HOME=~/.gems
+export GEM_HOME="~/.gems"
