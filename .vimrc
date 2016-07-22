@@ -69,6 +69,7 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
+
 " Only do this part when compiled with support for autocommands. {{{
 if has("autocmd")
 
