@@ -10,6 +10,6 @@ done
 url="https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim"
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-	curl -LSso ~/.vim/autoload/pathogen.vim "$url"
+  curl -LSso ~/.vim/autoload/pathogen.vim "$url"
 
 ~/.local/bin/cheat.sh
