@@ -1,5 +1,4 @@
 #!/bin/sh
-
 CHECKOUT=~/.local/share/dotfiles
 
 for s in $CHECKOUT/.vim $CHECKOUT/.vimrc; do
