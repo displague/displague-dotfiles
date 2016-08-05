@@ -8,6 +8,7 @@ try_paths=(
   "$HOME/Library/Python/3.5/bin"
   "$HOME/.gem/ruby/2.0.0/bin"
   "$HOME/.gem/ruby/2.1.0/bin"
+  "$HOME/.gem/ruby/2.3.0/bin"
   "$HOME/.gems/bin"
   "$HOME/.local/share/npm/bin"
   "$HOME/.local/share/google-cloud-sdk/bin"
