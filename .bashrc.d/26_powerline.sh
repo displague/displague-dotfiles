@@ -1,4 +1,5 @@
 for powerlinedir in \
+	$HOME/Library/Python/2.7/lib/python/site-packages/powerline/bindings \
 	$HOME/src/powerline/build/lib/powerline/bindings/ \
 	/usr/share/powerline/bindings/ \
 	; do
