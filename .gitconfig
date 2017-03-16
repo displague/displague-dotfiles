@@ -10,3 +10,7 @@
 [rerere]
 	autoUpdate = true
 	enabled = true
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
