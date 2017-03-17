@@ -1,6 +1,7 @@
 [user]
 	name = Marques Johansson
 	email = marques@displague.com
+	signingkey = DB884A92
 [color]
 	ui = auto
 [push]
@@ -14,3 +15,7 @@
 	tool = vimdiff
 [merge]
 	tool = vimdiff
+[gpg]
+	program = gpg1
+[tag]
+	gpgsign = true
