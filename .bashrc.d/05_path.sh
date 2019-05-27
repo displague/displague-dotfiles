@@ -1,5 +1,5 @@
 try_paths=(
-  {/usr{,/local},}/{,s}bin
+  {/usr{,/local},/snap}/{,s}bin
   "$HOME/snap"
   "$HOME/.local/bin"
   "$HOME/.bin"
