@@ -1,6 +1,10 @@
 D*
+A*
+L*
 M*
 P*
+.DS_Store
+.CFUserTextEncoding
 src
 *.un~
 *.key
