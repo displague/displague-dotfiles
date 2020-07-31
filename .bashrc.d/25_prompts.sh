@@ -44,5 +44,13 @@ function _update_ps1() {
   export PS1="$(powerline-shell.py $? 2> /dev/null)";
 }
 
-command -v powerline-shell.py >/dev/null && export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+function _update_ps1_go() {
+  export PS1="$(powerline-go -newline -error $? 2> /dev/null)";
+}
+
+if command -v powerline-go >/dev/null; then
+  export PROMPT_COMMAND="_update_ps1_go; $PROMPT_COMMAND"
+elif command -v powerline-shell.py >/dev/null; then
+  export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
 
