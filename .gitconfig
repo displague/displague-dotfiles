@@ -1,6 +1,6 @@
 [user]
 	name = Marques Johansson
-	email = mjohansson@packet.com
+	email = marques@packet.com
 	signingkey = CF2B41F9641BC514131F053427717999E2D09AB6
 	# signingkey = DB884A92
 [color]
@@ -24,4 +24,10 @@
 	gpgSign = on
 [format]
 	signOff = on
-
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
