@@ -11,6 +11,7 @@ try_paths=(
   "$HOME/.gems/bin"
   "$HOME/.local/share/npm/bin"
   "$HOME/.local/share/google-cloud-sdk/bin"
+  "/usr/local/go/bin"
   "/opt/google/google_appengine"
   ${GOPATH//://bin:}/bin
 );
