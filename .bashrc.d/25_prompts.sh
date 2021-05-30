@@ -41,8 +41,17 @@ xterm*|rxvt*)
 esac
 
 function _update_ps1() {
+  export PS1="$(powerline $? 2> /dev/null)";
+}
+
+function _update_ps1_python() {
   export PS1="$(powerline-shell.py $? 2> /dev/null)";
 }
 
-command -v powerline-shell.py >/dev/null && export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-
+if [[ $PROMPT_COMMAND != "*_update_ps1*" ]]; then
+  if command -v powerline > /dev/null; then
+    export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+  elif command -v powerline-shell.py >/dev/null; then
+    export PROMPT_COMMAND="_update_ps1_python; $PROMPT_COMMAND"
+  fi
+fi

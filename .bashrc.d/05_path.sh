@@ -10,6 +10,7 @@ try_paths=(
   $HOME/.gem/ruby/2.{0..4}.0/bin
   "$HOME/.gems/bin"
   "$HOME/.krew/bin"
+  "$HOME/.cargo/bin"
   "$HOME/.local/share/npm/bin"
   "$HOME/.local/share/google-cloud-sdk/bin"
   "/opt/google/google_appengine"
